@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/delete_bin"
+        android:title=""
+        android:checkable="false"/>
+    <item
+        android:id="@+id/photo"
+        android:title=""
+        android:icon="@drawable/photos"/>
+    <item
+        android:id="@+id/camera"
+        android:title=""
+        android:icon="@drawable/camera"/>
+    <item
+        android:id="@+id/confirm"
+        android:title=""
+        android:icon="@drawable/confirm_tick"/>
+</menu>

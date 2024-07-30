@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#E4E4E4</color>
+    <color name="background">#F6F3FF</color>
+    <color name="navBar">#5F52A7</color>
+    <color name="accentPurple">#E9E3FF</color>
+    <color name="accentPink">#FFD2E2</color>
+    <color name="button">#E16F9F</color>
+    <color name="primary">#1B023B</color>
+    <color name="secondary">#FF03DAC5</color>
+    <color name="heading">#6D5B87</color>
+
+    <color name="night_mode">#6124B1</color>
+    <color name="notification">#13B2C3</color>
+    <color name="private_account">#E6A326</color>
+    <color name="security">#D95F69</color>
+    <color name="colorGray">#9E9E9E</color>
+    <!-- Mood colours -->
+    <color name="very_negative">#FB7575</color>
+    <color name="negative">#FFAD89</color>
+    <color name="neutral">#FFE589</color>
+    <color name="positive">#C2F483</color>
+    <color name="very_positive">#7CF988</color>
+
+</resources>

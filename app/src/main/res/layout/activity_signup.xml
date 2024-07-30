@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f6f3ff"
+    tools:context=".signup.SignupActivity">
+
+    <RelativeLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!-- "Signup" text -->
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Sign Up"
+            android:textColor="#16075d"
+            android:textSize="30sp" />
+
+        <!-- "Name" text -->
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpTextView"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="24dp"
+            android:text="Name"
+            android:textColor="#16075d"
+            android:textSize="18sp" />
+
+        <!-- Name input -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_rounded_shape"
+            android:inputType="textEmailAddress" />
+
+        <!-- "Email" text -->
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameEditText"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="24dp"
+            android:text="Email"
+            android:textColor="#16075d"
+            android:textSize="18sp" />
+
+        <!-- Email input -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_rounded_shape"
+            android:inputType="textEmailAddress" />
+
+        <!-- "Password" text -->
+        <TextView
+            android:id="@+id/passwordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailEditText"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:text="Password"
+            android:textColor="#16075d"
+            android:textSize="18sp" />
+
+        <!-- password input -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_rounded_shape"
+            android:inputType="textPassword" />
+
+        <!-- "Password Confirm" text -->
+        <TextView
+            android:id="@+id/passwordConfirmTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordEditText"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:text="Password Confirm"
+            android:textColor="#16075d"
+            android:textSize="18sp"
+            />
+
+        <!-- password confirm input -->
+        <EditText
+            android:id="@+id/passwordConfirmEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordConfirmTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_rounded_shape"
+            android:inputType="textPassword" />
+
+        <!-- Signup button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordConfirmEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Sign up"
+            android:background="@drawable/button_rounded_shape"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/back_btn" />
+
+
+</RelativeLayout>

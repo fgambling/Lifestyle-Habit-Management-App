@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/diary"
+        android:title="@string/diary"
+        android:icon="@drawable/diary"/>
+    <item
+        android:id="@+id/calendar"
+        android:title="@string/calendar"
+        android:icon="@drawable/calendar"/>
+    <item
+        android:id="@+id/habits"
+        android:title="@string/habits"
+        android:icon="@drawable/habits"/>
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settings"/>
+</menu>

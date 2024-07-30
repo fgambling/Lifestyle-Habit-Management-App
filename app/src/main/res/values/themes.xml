@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.A2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="android:colorBackground">#F6F3FF</item> -->
+    </style>
+
+    <style name="Navbar.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/primary</item>
+    </style>
+
+    <style name="ActionBar.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/navBar</item>
+    </style>
+
+    <style name="Theme.A2" parent="Base.Theme.A2" />
+    <style name = "nightModeSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated" type="color">@color/night_mode</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+
+    <style name = "notificationSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated" type="color">@color/notification</item>
+        <item name="colorSwitchThumbNormal">#FFFFFF</item>
+        <item name="android:colorForeground">#99FFFFFF</item>
+    </style>
+</resources>

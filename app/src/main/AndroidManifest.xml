@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="CoarseFineLocation">
+
+    <!--To get the permission of location -->
+    <uses-permission android:name="android.permission.INTERNET"
+        tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--To get the permission of camera -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--To get the permission of storage -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.A2"
+        tools:targetApi="31">
+        <activity
+            android:name=".diary.DiaryEntryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".diary.CreateDiaryEntryAction"
+            android:exported="false" />
+        <activity
+            android:name=".diary.UpdateDiaryEntryAction"
+            android:exported="false" />
+        <activity
+            android:name=".habits.CreateHabit"
+            android:exported="false" />
+        <activity
+            android:name=".habits.UpdateHabit"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <receiver android:name=".settings.AlarmReceiver"/>
+        <activity
+            android:name=".settings.SecurityActivity">
+        </activity>
+        <activity
+            android:name=".settings.AboutUsActivity">
+        </activity>
+        <activity
+            android:name=".settings.DeclarationPageActivity">
+        </activity>
+        <activity
+            android:name=".settings.PasswordChange">
+        </activity>
+        <activity
+            android:name=".settings.Pinactivity">
+        </activity>
+        <activity
+            android:name=".settings.ProfileEditActivity">
+        </activity>
+        <activity
+            android:name=".settings.MainSettingActivity">
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signup.SignupActivity"
+            android:exported="true">
+        </activity>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+
+    </application>
+
+</manifest>
